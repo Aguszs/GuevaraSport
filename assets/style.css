@@ -23,10 +23,80 @@ body{
 header{
     display: flex;
     align-items: center;
-    height: 100px;
-    
+justify-content: space-around; 
+background-color: #801111;   
+position: fixed;
+width: 100%;
+height: 7rem;
+top: 0;
+z-index: 1;
+font-family: "Bebas Neue", sans-serif;
+}
+.logos img{
+    height: 5rem;
+   padding-left: 20px;
+   
+   
+   justify-content: center;
+}
+.fondo{
+    background-color: rgb(231,248,254);
+}
+.logos h2{
+   
+    padding-left: 15px;
+    padding-top: 10px;
+    color:#2980B9;
 }
 
+.logos {
+    display: flex;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    gap: 80px;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+header a{
+    text-decoration: none;
+}
+.navbar-list li,a{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+
+
+.navbar-list a:hover{
+  
+    color: white;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+    transition: .2s linear;
+
+}
+
+.menu{
+    font-size: 20px;
+    color: black;
+    font-family:  'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    
+
+}
+.navbar{
+    display: flex;
+}
+.navbar i{
+    font-size: 36px;
+    display: none;
+
+}
+/*
 nav{
     display: flex;
     align-items: center;
@@ -40,6 +110,13 @@ nav{
     
     
   
+}
+.navbar-list{
+    justify-content: space-around;
+   
+}
+.navbar-list ul >a{
+    margin: 2rem;
 }
 
 a{
@@ -59,6 +136,7 @@ nav img{
     height: 70px;
     
 }
+    */
 section{
     
     justify-content: center;
@@ -89,7 +167,7 @@ p{
 
 }
 button{
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 800;
     margin: 1rem;
     height: 2rem;
@@ -99,7 +177,13 @@ button{
     font-family: "Bebas Neue", sans-serif;
     
 }
-
+.linea{
+   
+        height: 4px;
+        background-color: white;
+        margin: 2rem;
+    
+}
 
 .glow-on-hover {
     width: 220px;
@@ -171,8 +255,13 @@ button{
     align-items: center;
     padding: 3rem;
     gap: 10rem;
+    
 }
-
+.pesa{
+    webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
 .myVideo {
     object-fit: cover;
     width: 100%;
@@ -190,10 +279,316 @@ button{
     display: flex;
     text-align: center;
     justify-content: center;
-    
-    
+
+ }
+ .medio h1{
+    padding-top: 8rem;
  }
  .nosotros h1{
     margin-top: 20rem;
     padding-bottom: 5rem;
  }
+ .Lineup{
+    animation: 5s anim-lineUp ease-out infinite;
+ }
+
+ @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .lineas{
+    width: 70%;
+    margin: auto;
+    }
+
+.tex-info{
+    font-size: 1.4rem;
+}
+
+    
+  .cards{
+margin: 4rem;  
+
+}
+.cards p{
+    font-size: 1.4rem;
+    
+}
+
+
+
+  .cards ul {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   list-style-type: none;
+   gap: 5rem;
+ 
+
+  
+  }
+  .cards img{
+    width: 20rem;
+    height: 26rem;
+    border-radius: 1rem;
+  }
+
+.cards li:hover
+    {
+        -webkit-transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        transition: 1.3s;
+        
+}
+
+
+
+
+.contacto{
+    display: flex;
+    gap: 5rem;
+    background-color: #7a6969;
+
+}
+.infoContacto{
+    text-align: center;
+    border: 1px solid black;
+    font-size: 2rem;
+    padding: 2rem;
+   
+}
+.infoContacto h2, p{
+    font-size: 2rem;
+    text-align: start;
+
+}
+.infoContacto h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.footer{
+    background-color: #ff0000;
+    height: 20em;
+}
+.redes{
+    padding: 3rem;
+    
+}
+.redes a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: white;
+    border: .1rem solid rgba(255, 255, 255, .3);
+    margin: .3rem;
+    border-radius: 50%;
+    
+}
+.redes a:hover{
+     
+        background-color: rgb(4, 4, 4);
+    
+}
+.mapa{
+    height: 25rem;
+    width: 25rem;
+    margin: 2rem;
+    border-radius: 2rem;
+}
+.foter-nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+.foter-nav a{
+    padding: .7rem 2rem;
+    color: white;
+    border: .1rem solid rgba(255, 255, 255, .3);
+    font-size: 2rem;
+}
+.foter-nav a:hover{
+    background-color: rgb(8, 8, 8);
+}
+
+.maquina{
+    margin: auto;
+	display: table;
+}
+
+span{
+    font-size: 2.3rem;
+    font-weight: 800;
+    font-family: "Bebas Neue", sans-serif;
+    color: #c63131;
+    
+}
+.navbar i{
+    font-size: 1rem;
+    display: none;
+}
+.fa-solid, .fas{
+    font-weight: 900;
+}
+#toggle-menu{
+    display: none;
+}
+
+
+
+@media (max-width:992px){
+    header{
+        width: 100%;
+    }
+    .navbar a  {
+        margin: auto;
+    }
+    .medio h1{
+        margin: auto;
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 15rem;
+    }
+    .Lineup{
+        margin: auto;
+        font-size: 2rem;
+        animation: none;
+    }
+    .portada {
+        display: block;
+        
+    }
+    .tex-info p{
+        padding-top: 8rem;
+    }
+   
+   
+    button{
+        margin: 5rem;
+    }
+    .portada img{
+       display: none;
+    }
+    .linea{
+        margin: auto;
+        width: 50%; 
+        margin-top: 3rem;
+      }
+
+      .cards ul{
+        flex-direction: column;
+      
+      }
+     .contacto{
+        flex-wrap: wrap;
+     }
+     .infoContacto{
+        margin-top: 5rem;
+     }
+    .mapa{
+        margin-bottom: 3.6rem;
+    }
+    .redes{
+        margin: auto;
+        
+    }
+    .foter-nav a{
+        
+        color: white;
+        border: .1rem solid rgba(255, 255, 255, .3);
+        font-size: 1rem;
+    }
+    @media (max-width:576px){
+        header{
+            width: 100%;
+        }
+        .logos{
+            margin: auto;
+
+        }
+     
+        .medio h1{
+            margin: auto;
+            font-size: 2rem;
+           padding-top: 10rem;
+           flex-wrap: wrap;
+        }
+        .nosotros h1{
+            margin: auto;
+           padding-top:15rem ;
+        }
+        .linea{
+            width: 80%;
+        }
+        .tex-info p{
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+         button{
+            
+            margin: auto;
+        }
+        .redes a{
+           margin: .1rem;
+            font-size: 1.4rem;
+           
+        }
+     
+        
+  
+    
+        .navbar ul{
+            background-color: rgb(231,248,254);
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute;
+        top: 7rem;
+        left: 0;
+       
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: all 0.4s ease-in-out;
+    }
+    .navbar a {
+        color: #2980B9;
+        
+    }
+    .navbar i {
+        display: block;
+        padding-right: 10px;
+    
+    }
+    #toggle-menu:checked + .navbar-list{
+    transform: translateX(0%);
+    transition: all 0.4s ease-in;
+    
+    }
+   
+    .navbar-list{
+        gap: 1rem;
+    
+    }
+
+
+    }
+}

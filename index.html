@@ -1,55 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://kit.fontawesome.com/0298b650a2.js" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style.css">
     <title>Guevara Gimnasio</title>
 </head>
 <body>
-    <header>
-    <nav class="navbar">
-      
-            <img src="/assets/Diseño sin título (2) (1).png" alt="">
-            
-                <a href="#home">Home</a>
-                <a href="#about">Nosotros</a>
-                <a href="#servicios">servicios</a>
-                <a href="#products">productos</a>
-                <a href="#contacto">contacto</a>
-        
-    </nav>
-</header>
+  <header>
+    <div class="logos">
+        <img
+          src="./assets/Diseño sin título (2) (1).png"/> 
+
+
+        </div>
+     
+         
+        <nav class="navbar">
+           <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+          <input type="checkbox"  id="toggle-menu">
+         
+          <ul class="navbar-list">
+            <a href="#" class="menu"><li>Inicio</li></a>
+            <a href="#Servicios" class="menu"><li>Servicios</li></a>
+            <a href="#Actividades" class="menu"><li>Actividades</li></a>
+            <a href="#contacto" class="menu"><li>Contacto</li></a>
+          </ul>
+      </nav>
+  </header>
 
 <section >
   <div class="medio">
   <h1>«Mi fuerza no vino de levantar pesas. Mi fuerza vino al levantarme cuando fui derribado». Bob Moore.</h1>
   <video autoplay muted loop class="myVideo">
-    <source src="/assets/7187397-hd_1920_1080_24fps.mp4" type="video/mp4">
+    <source  src="/assets/7187397-hd_1920_1080_24fps.mp4" type="video/mp4">
   </video>
 </div>
 </section>
 <section>
   <div class="nosotros">
-  <h1>"Supera tus límites, redefine tu fuerza: CrossFit es el camino."</h1>
+  <h1 class="Lineup">"Supera tus límites, redefine tu fuerza: CrossFit es el camino."</h1>
   
-
   <div class="portada">
-    <div class="tex-info">
-      <h2>"Superación intensa, resultados extraordinarios: ¡CrossFit en su mejor forma!"</h2>
+    <div class="tex-info" id="Servicios">
+      
+      <span > "Superación intensa, resultados extraordinarios: ¡CrossFit en su mejor forma!"</span>
+      <hr class="linea">
       <p>CrossFit combina fuerza y cardio intenso para mejorar resistencia, fuerza, flexibilidad y promover comunidad y superación personal, beneficiando salud física y mental.</p>
       
-      
+
       <button class="glow-on-hover">Entrenamos?</button>
       <button class="glow-on-hover">Nosotros</button>
     
 
     </div>
    
-    <img src="/assets/pexels-victorfreitas-791763.jpg" alt="">
+    <img  class="pesa" src="/assets/pexels-victorfreitas-791763.jpg" alt="">
 
   </div>
 </div>
 </section>
+<hr class="linea">
+
+<section class="cards">
+  
+
+  <ul>
+
+
+  <li>
+    <img class="pesa2" id="Actividades" src="/assets/kettlebell-.jpg" alt=""></li>
+
+    <li><img class="pesa3" src="/assets/fitness-and-health-5711493_1280.jpg" alt=""></li>
+    <li><img class="pesa4" src="/assets/tyre-push-2140998_1280.jpg" alt=""></li>
+  </ul>
+</section>
+<section class="contacto">
+  <div class="infoContacto" id="contacto">
+  <h2>Contacto</h2>
+  <p>telefono: 3513428952</p>
+  <p>email: GuevaraSport@gmail</p>
+  <p>Direccion: Gral. Paz 195, X5000 Córdoba</p>
+</div>
+<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3405.0423771357546!2d-64.1886503!3d-31.4129585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a311e795a9ab%3A0x82bcc1911d7b2bf1!2sMegatlon%20Centro%20(C%C3%B3rdoba)!5e0!3m2!1ses-419!2sar!4v1720154681706!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+
+
+</section>
+<section class="footer">
+<div class="redes">
+  <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+</div>
+<div class="foter-nav">
+  <a href="#">Home</a>
+  <a href="#">Nosotros</a>
+  <a href="#">Servicios</a>
+ <a href="#">Contacto</a>
+ 
+ 
+</div>
+
+</section>
+
+
+
 </body>
 </html>
